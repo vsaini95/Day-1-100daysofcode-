@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(225, 100%, 94%);
+  font-family: "Red Hat Display", sans-serif;
+}
+.wrapper {
+  background: url(images/pattern-background-desktop.svg) no-repeat;
+  background-size: 1540px 445px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  background-color: white;
+  width: 360px;
+  height: 550px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px rgb(245, 243, 243);
+  overflow: hidden;
+}
+.upperc img {
+  width: 360px;
+}
+.card-body {
+  width: 360px;
+  height: 370px;
+  display: flex;
+  flex-direction: column;
+}
+.subdiv {
+  padding: 0px;
+  margin: 0px;
+  flex-grow: 1;
+  text-align: center;
+  position: relative;
+  top: 20px;
+}
+.subdiv p {
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 14px;
+  margin-top: -30px;
+  font-weight: 500;
+  color: rgb(119, 116, 116);
+}
+article > img {
+  position: relative;
+  right: 100px;
+  top: 20px;
+  width: 40px;
+  height: 40px;
+}
+.box h4 {
+  font-weight: 900;
+  font-size: 14px;
+  transform: translate(-33px, -25px);
+}
+.box p {
+  transform: translate(-35px, 10px);
+  font-size: 13px;
+}
+.ashift {
+  transform: translate(98px, -22px);
+  font-weight: 900;
+  font-size: 12px;
+}
+.ashift a:hover {
+  text-decoration: none;
+}
+.subdiv .box {
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 10px;
+  height: 80px;
+  margin-left: 40px;
+  margin-right: 40px;
+  transform: translateY(-25px);
+}
+.subdiv btn {
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px 0px rgb(61, 60, 60);
+  padding: 13px 78px;
+  font-size: 12px;
+  font-weight: 600;
+  position: relative;
+  bottom: 30px;
+}
+.subdiv btn:hover {
+  background-color: hsl(223, 47%, 23%);
+}
+
+.subdiv h2 {
+  font-weight: 900;
+}
+.subdiv .p {
+  font-weight: 900;
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 376px) {
+  .wrapper {
+    background-image: url(images/pattern-background-mobile.svg);
+    background-size: 375px 180px;
+  }
+  .card {
+    width: 340px;
+  }
+}
